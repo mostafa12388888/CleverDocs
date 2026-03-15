@@ -12,7 +12,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        DB:://statement('SET SESSION sql_require_primary_key=0');
+        //DB::statement('SET SESSION sql_require_primary_key=1');
         Schema::create('oauth_clients', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id')->nullable()->index();
