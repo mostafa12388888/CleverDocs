@@ -18,7 +18,7 @@ return new class extends Migration
             $table->unsignedBigInteger('client_id');
             $table->timestamps();
         });
-        DB::statement('SET SESSION sql_require_primary_key=1');
+        //DB::statement('SET SESSION sql_require_primary_key=1');
     }
 
     /**

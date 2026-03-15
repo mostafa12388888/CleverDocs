@@ -19,7 +19,7 @@ return new class extends Migration
             $table->boolean('revoked');
             $table->dateTime('expires_at')->nullable();
         });
-        DB::statement('SET SESSION sql_require_primary_key=1');
+        //DB::statement('SET SESSION sql_require_primary_key=1');
     }
 
     /**

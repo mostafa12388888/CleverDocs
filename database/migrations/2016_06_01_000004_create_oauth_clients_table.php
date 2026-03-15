@@ -25,7 +25,7 @@ return new class extends Migration
             $table->boolean('revoked');
             $table->timestamps();
         });
-        DB::statement('SET SESSION sql_require_primary_key=1');
+        //DB::statement('SET SESSION sql_require_primary_key=1');
     }
 
     /**

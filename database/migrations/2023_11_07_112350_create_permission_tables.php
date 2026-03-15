@@ -119,7 +119,7 @@ return new class extends Migration
             ->store(config('permission.cache.store') != 'default' ? config('permission.cache.store') : null)
             ->forget(config('permission.cache.key'));
 
-    DB::statement('SET SESSION sql_require_primary_key=1');
+    //DB::statement('SET SESSION sql_require_primary_key=1');
     }
 
     /**

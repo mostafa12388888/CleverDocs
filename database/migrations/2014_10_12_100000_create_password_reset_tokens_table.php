@@ -19,7 +19,7 @@ return new class extends Migration
             $table->timestamp('created_at')->nullable();
         });
 
-        // \Illuminate\Support\Facades\DB::statement('SET SESSION sql_require_primary_key=1');
+        // \Illuminate\Support\Facades\//DB::statement('SET SESSION sql_require_primary_key=1');
     }
 
     /**
