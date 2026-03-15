@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        \Illuminate\Support\Facades\DB::statement('SET SESSION sql_require_primary_key=0');
+        // \Illuminate\Support\Facades\DB:://statement('SET SESSION sql_require_primary_key=0');
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {
             $table->string('email')->primary();
@@ -19,7 +19,7 @@ return new class extends Migration
             $table->timestamp('created_at')->nullable();
         });
 
-        \Illuminate\Support\Facades\DB::statement('SET SESSION sql_require_primary_key=1');
+        // \Illuminate\Support\Facades\DB::statement('SET SESSION sql_require_primary_key=1');
     }
 
     /**
